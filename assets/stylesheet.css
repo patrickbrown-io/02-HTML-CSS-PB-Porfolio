@@ -90,7 +90,6 @@ header {
 li {
   font-weight: bolder;
   margin: 5%;
-  padding: 5%;
   display: flex;
   flex: 1;
   margin-right: 10%;
@@ -281,9 +280,5 @@ ul {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-  }
-
-  ul {
-    margin: 10%;
   }
 }
