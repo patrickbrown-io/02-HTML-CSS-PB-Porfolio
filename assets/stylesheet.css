@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   width: 100%;
+  background-color: #ff6978;
 }
 
 main {
@@ -15,7 +16,7 @@ main {
   justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 1px;
+  /* padding: 0 0 50px 0; */
   background-color: #ff6978;
 }
 
@@ -32,25 +33,27 @@ header {
 /* creates bar layout */
 .about-me {
   width: 90%;
-  height: 10%;
   background-color: #2a9d8f;
-  flex: 1;
+  flex: 2;
+  flex-wrap: wrap;
   border-radius: 0% 70px 00px 0%;
   align-content: center;
   justify-content: center;
+  box-shadow: 10px 10px 1px #331a30, 20px 20px 1px #2c1320;
 }
 .newProject {
   width: 90%;
-  flex: 2;
+  flex: 1;
   background-color: #e9c46a;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  box-shadow: 10px 10px 1px #331a30, 20px 20px 1px #2c1320;
 }
 .otherProjects {
   width: 90%;
-  flex: 1.5;
+  flex: 3;
   background-color: #264653;
   border-radius: 0% 0px 70px 0%;
   display: flex;
@@ -60,10 +63,11 @@ header {
   flex-wrap: wrap;
   margin-top: 1px;
   padding: 3% 0%;
+  box-shadow: 10px 10px 1px #331a30, 20px 20px 1px #2c1320;
 }
 .contactMe {
   width: 100%;
-  flex: 1;
+  flex: 2;
   display: flex;
   background-color: #ff6978;
   border-radius: 0% 10px 10px 0%;
@@ -76,7 +80,7 @@ header {
   stroke: 1px solid #30011e;
   color: whitesmoke;
   flex-wrap: nowrap;
-  flex: 1;
+  flex: 2;
   padding: 2% 2%;
   margin-left: 5%;
   height: 100%;
@@ -86,7 +90,11 @@ header {
 li {
   font-weight: bolder;
   margin: 5%;
+  padding: 5%;
   display: flex;
+  flex: 1;
+  margin-right: 10%;
+  flex-wrap: wrap;
 }
 
 a {
@@ -104,9 +112,11 @@ a:hover {
 .about-me {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  flex: 3;
+  flex-wrap: wrap;
+  flex: 1;
   max-height: 60%;
+  align-items: center;
+  justify-content: center;
 }
 /* contains the about me bio stylings */
 .about-me-content {
@@ -115,20 +125,19 @@ a:hover {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  max-height: 100%;
   width: auto;
   border-radius: 30px 60px;
   border: 2px solid whitesmoke;
   padding: 5%;
-  flex: 1 2 1;
+  flex: 4;
 }
 /* headshot photo styling */
 .headshot-photo {
   border-radius: 60px 30px;
   width: 50%;
   height: 50%;
-  margin: 2%;
-  flex: 1 1 1;
+  margin: 3%;
+  flex: 1;
 }
 
 .about-me-content {
@@ -141,12 +150,22 @@ a:hover {
 
 /* NEW PROJECT BOX STYLING */
 
+.project-link:hover {
+  color: #ff6978;
+}
+#mainProject-link {
+  color: black;
+}
+#mainProject-link:hover {
+  color: #264653;
+}
+
 .newProject-img {
   border-radius: 30px 60px;
   width: 40%;
   height: 40%;
   margin: 5%;
-  flex: 1;
+  flex: 2;
   margin: 5%;
   border: 2px solid black;
 }
@@ -158,7 +177,7 @@ a:hover {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  max-height: 100%;
+  min-width: 20%;
   width: auto;
   border-radius: 30px 60px;
   border: 2px solid black;
@@ -244,6 +263,7 @@ ul {
   flex: 2;
   color: whitesmoke;
   display: flex;
+  margin-right: 10%;
 }
 
 #light-background-text {
@@ -251,17 +271,19 @@ ul {
 }
 
 /* Media Query Section */
-/* @media screen and (max-width: 842) {
-  .about-me {
-    width: 100%;
-    height: 25%;
-    flex-direction: column;
-  }
-
-  .about-me-content {
-    width: 100%;
-    height: 25%;
+@media only screen and (max-width: 860) {
+  .about-me,
+  header,
+  footer,
+  #aboutsection,
+  ul {
     flex-direction: column;
     flex-wrap: wrap;
-  } */
+    align-content: flex-start;
+    justify-content: center;
+  }
+
+  ul {
+    margin: 10%;
+  }
 }
