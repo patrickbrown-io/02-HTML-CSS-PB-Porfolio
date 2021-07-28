@@ -37,10 +37,14 @@ header {
   flex: 2;
   flex-wrap: wrap;
   border-radius: 0% 70px 00px 0%;
+  display: flex;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
+  max-height: 60%;
   box-shadow: 10px 10px 1px #331a30, 20px 20px 1px #2c1320;
 }
+
 .newProject {
   width: 90%;
   flex: 1;
@@ -106,21 +110,9 @@ a:hover {
   color: black;
 }
 
-/* About me positioning */
-/* about me flexbox */
-.about-me {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  max-height: 60%;
-  align-items: center;
-  justify-content: center;
-}
 /* contains the about me bio stylings */
 .about-me-content {
   margin: 5%;
-  position: relative;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -135,7 +127,7 @@ a:hover {
   border-radius: 60px 30px;
   width: 50%;
   height: 50%;
-  margin: 3%;
+  margin: 5%;
   flex: 1;
 }
 
@@ -263,6 +255,7 @@ ul {
   color: whitesmoke;
   display: flex;
   margin-right: 10%;
+  flex-direction: row;
 }
 
 #light-background-text {
