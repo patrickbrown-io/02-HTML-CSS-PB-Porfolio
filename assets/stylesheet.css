@@ -180,10 +180,6 @@ a:hover {
   flex: 5;
 }
 
-#feature-project-text {
-  min-width: 40%;
-}
-
 /* Older projects box styling */
 .projectTile1 {
   margin: 0% 5% 1% 1%;
