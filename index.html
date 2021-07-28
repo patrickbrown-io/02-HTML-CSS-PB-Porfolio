@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="reset" href="./assets/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheet.css">
+</head>
+
+<body>
+
+<!-- Header with nav and name -->
+<header>
+    <h1 class="main-header">Pat Brown's Portfolio</h1>
+<!-- Nav element -->
+<!-- <nav> -->
+    <ul>
+        <li><a href="index.html#aboutsection">About</a></li>
+        <li><a href="index.html#projectsection">Projects</a></li>
+        <li><a href="index.html#contactsection">Contact</a></li>
+    </ul>
+<!-- </nav> -->
+
+</header>
+<!-- main content --> 
+<main>
+<!-- about me card -->
+    <section class="about-me" id='aboutsection'>
+        <h2 class="main-header">About Me</h2>
+        <img class="headshot-photo" src="./assets/pb.jpg" alt="A photo of a handsome young full-stack developer">
+        <p class="about-me-content">Patrick (Pat) Brown is a marketing professional & future full-stack developer. Take a look at my projects below and if you like what you see, give me a shout! In his spare time, Pat enjoys video games, weight-lifting, and trying not to kick his Hackintosh down a flight of stairs.  </p>
+    </section>
+
+<!-- projects card and projects flex box -->
+
+
+<!-- MAIN PROJECT -->
+        <section class="newProject" id="projectsection">
+            <h2 class="main-header" id='light-background-text'>New Project</h2>
+            <section class="new-project-description">
+            <h4>Cortana</h4>
+            <p>Cortana was created using a flash cloned copy of Dr. Catherine Halsey's brain. Twenty flash cloned brains were created,
+            but only two survived; one of the two survivors was used to create Cortana. The neural pathways of the cloned brain were
+            scanned and copied through a process called Cognitive Impression Modeling.</p>
+            </section>
+            <img class="newProject-img" src="./assets/cortana.jpg" alt="cortana AI">
+        </section>
+
+<!-- OTHER PROJECTS -->
+        <section class="otherProjects">
+            <h2 class="main-header">Portfolio</h2>
+
+            <a class="projectLinks" href="https://en.wikipedia.org/wiki/The_Matrix" target="no_blank">
+            <section class="projectTile1" id='matrix'>
+                <!-- <img class="tile-img" src="./assets/matrix.jpg" alt="A glimpse into a view of the Matrix"> -->
+                <h4  class='project-tile-text'>The Matrix</h4>
+                <p class='project-tile-text'>Alternate Realities</p>
+            </section></a>
+
+            <section class="projectTile1" id='monitors'> 
+                <!-- <img class="tile-img" src="./assets/monitors.jpg" alt="A photo of two monitors"> -->
+                <h4 class='project-tile-text'>Double Monitors</h4>
+                <p class='project-tile-text'>Why settle for one?</p>
+            </section>
+
+            <section class="projectTile1" id='vision'> 
+                <!-- <img class="tile-img" src="./assets/glasses.jpg" alt="A photo of two blurry monitors with glasses making them clear"> -->
+                <h4 class='project-tile-text'>Glasses</h4>
+                <p class='project-tile-text'>Hardware Solution for Improving Fidelity</p>
+            </section>
+
+            <section class="projectTile1" id='globalenergy'>
+                <!-- <img class="tile-img" src="./assets/nasa.jpg" alt="A photo from space of the Earth illuminated at night by electricity"> -->
+                <h4 class='project-tile-text'>Global Energy System</h4>
+                <p class='project-tile-text'>HTML Solar Pannels</p>
+            </section>
+
+         </section> 
+  
+<!-- contact me card -->
+</main>
+
+</body>
+
+<footer class="contactMe" id=contactsection>
+    <h2 class="main-header">Contact me</h2>
+    <ul class="contact-me-list">
+        <li><a href="tel:812-322-9561">812-322-9561</a></li>
+        <li><a href="mailto:pat@coldpop.org">pat@coldpop.org</a></li>
+        <li><a href="https://github.com/patrickbrown-io">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/patrick-brown-9930a365/">LinkedIn</a></li>
+    </ul>    
+</footer>
+
+</html>

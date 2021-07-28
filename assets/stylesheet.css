@@ -1,0 +1,269 @@
+* {
+  font-family: "Chivo", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 1px;
+  background-color: #ff6978;
+}
+
+header {
+  width: 100%;
+  background-color: #ff6978;
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+/* creates bar layout */
+.about-me {
+  width: 90%;
+  height: 10%;
+  background-color: #2a9d8f;
+  flex: 1;
+  border-radius: 0% 70px 00px 0%;
+  align-content: center;
+  justify-content: center;
+}
+.newProject {
+  width: 90%;
+  flex: 2;
+  background-color: #e9c46a;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.otherProjects {
+  width: 90%;
+  flex: 1.5;
+  background-color: #264653;
+  border-radius: 0% 0px 70px 0%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  padding: 3% 0%;
+}
+.contactMe {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  background-color: #ff6978;
+  border-radius: 0% 10px 10px 0%;
+  padding: 0% 5% 0% 0%;
+}
+
+/* Global positioning */
+/* header positioning */
+.main-header {
+  stroke: 1px solid #30011e;
+  color: whitesmoke;
+  flex-wrap: nowrap;
+  flex: 1;
+  padding: 2% 2%;
+  margin-left: 5%;
+  height: 100%;
+}
+/* nav positioning */
+nav {
+  flex: 2;
+  padding-right: 2%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: space-evenly;
+}
+/* ul {
+  display: flex;
+  list-style: none;
+  align-item: center;
+  justify-content: center;
+} */
+
+li {
+  font-weight: bolder;
+  margin: 5%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+li,
+a:hover {
+  color: black;
+}
+
+/* About me positioning */
+/* about me flexbox */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 3;
+  max-height: 60%;
+}
+/* contains the about me bio stylings */
+.about-me-content {
+  margin: 5%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  max-height: 100%;
+  width: auto;
+  border-radius: 30px 60px;
+  border: 2px solid whitesmoke;
+  padding: 5%;
+  flex: 1 2 1;
+}
+/* headshot photo styling */
+.headshot-photo {
+  border-radius: 60px 30px;
+  width: 50%;
+  height: 50%;
+  margin: 2%;
+  flex: 1 1 1;
+}
+
+.about-me-content {
+  color: whitesmoke;
+  font-size: larger;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* NEW PROJECT BOX STYLING */
+
+.newProject-img {
+  border-radius: 30px 60px;
+  width: 40%;
+  height: 40%;
+  margin: 5%;
+  flex: 1;
+  margin: 5%;
+  border: 2px solid black;
+}
+
+.new-project-description {
+  padding: 2%;
+  margin: 5% 2%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  max-height: 100%;
+  width: auto;
+  border-radius: 30px 60px;
+  border: 2px solid black;
+  flex: 5;
+}
+
+#feature-project-text {
+  min-width: 40%;
+}
+
+/* Older projects box styling */
+.projectTile1 {
+  margin: 0% 5% 1% 1%;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 100%;
+  width: auto;
+  border-radius: 4% 6%;
+  border: 2px solid whitesmoke;
+  flex: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.tile-img {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  border-radius: 30px 60px;
+  margin: 0%;
+  object-fit: cover;
+}
+
+/* BACKGROUND IMAGE TILES */
+#matrix {
+  background-image: url(./matrix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#monitors {
+  background-image: url(./monitors.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#vision {
+  background-image: url(./glasses.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#globalenergy {
+  background-image: url(./nasa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.project-tile-text {
+  text-align: center;
+  color: whitesmoke;
+  padding: 0% 30%;
+  flex-wrap: wrap;
+}
+
+/* footer styling */
+footer {
+  width: 100%;
+  background-color: #ff6978;
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  justify-content: center;
+  align-content: center;
+  flex: 2;
+  color: whitesmoke;
+  display: flex;
+}
+
+#light-background-text {
+  color: black;
+}
