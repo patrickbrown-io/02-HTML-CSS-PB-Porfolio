@@ -251,10 +251,10 @@ footer {
 ul {
   justify-content: center;
   align-content: center;
-  flex: 2;
+  flex: 3;
   color: whitesmoke;
   display: flex;
-  margin-right: 10%;
+  margin: 2% 10%;
   flex-direction: row;
 }
 
@@ -264,14 +264,14 @@ ul {
 
 /* Media Query Section */
 @media only screen and (max-width: 860) {
-  .about-me,
+  /* .about-me,
   header,
   footer,
-  #aboutsection,
+  #aboutsection, */
   ul {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
   }
 }
